@@ -1,0 +1,33 @@
+body {
+  font-family: 'Charm', cursive;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.fa-exchange-alt {
+  cursor: pointer;
+  font-size: 36px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3E3636;
+  transition-duration: 100ms;
+}
+
+.fa-exchange-alt:hover {
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
+.my-tooltip {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+textarea, span {
+  font-family: 'sans-seriff';
+}

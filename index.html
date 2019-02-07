@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <title>Ceaser Cipher Converter</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">Ceaser Cipher Converter</h1>
+    <hr>
+    <div class="form row">
+      <div class="col-lg-5 col-12">
+        <h4 id="text1">Plaintext</h4>
+        <textarea id="textarea1" style="text-transform: uppercase; min-height: 100px;" class="form-control" type="text" placeholder="Plaintext..."></textarea>
+      </div>
+      <div class="col-lg-2 col-2">
+        <div class="my-tooltip" style="display:none">Alternate</div>
+        <i class="fas fa-exchange-alt" onclick="switchMode()"></i>
+        <input type="number" min="0" max="26" oninput="updateShift()" id="shift-count"
+        style="width:50px; position: absolute; left: 50%; top: 80%; transform: translate(-50%, -50%);" value="1">
+      </div>
+      <div class="col-lg-5 col-10">
+        <h4 id="text2">Ciphertext</h4>
+        <span id="textarea2" style="text-transform: uppercase; min-height: 100px;" class="form-control" type="text"></span>
+      </div>
+      <div class="col" style="font-family: sans-seriff; margin-top: 40px;">
+      </div>
+    </div>  
+
+    <h4>About Ceaser Ciphers</h4>
+    <span>The Caesar cipher is one of the earliest known and simplest ciphers. It is a type of substitution cipher in which each letter in the plaintext is 'shifted' a certain number of places down the alphabet. For example, with a shift of 1, A would be replaced by B, B would become C, and so on. The method is named after Julius Caesar, who apparently used it to communicate with his generals.</span>
+    <br><br>
+    <div class="row">
+      <div class="col">
+        <h5>Plaintext:</h5>
+        <span>Your message you would like to conceal. (normie speak)</span>
+        <br><br>
+        <h5>Ciphertext:</h5>
+        <span>Encrypted result of your plaintext</span>
+        <br><br>
+        <h5>Shift Count:</h5>
+        <span>The amount of itmes the alphabet is shifted for encipherment</span>
+      </div>
+      <div class="col">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sMOZf4GN3oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue fixed-bottom" style="background: rgb(201, 203, 204)">
+    <div class="footer-copyright text-center py-3">
+      © 2018 Copyright: Tryston Perry | Made with love by <a target="_blank" href="http://github.com/trystonperry">@TrystonPerry</a>
+    </div>
+  </footer>
+
+</body>
+<script src="app.js"></script>
+<script src="cipher.js"></script>
+</html>
